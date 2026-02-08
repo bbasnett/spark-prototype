@@ -1,0 +1,23 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(npm install:*)",
+      "Bash(npx shadcn@latest init:*)",
+      "Bash(npx tsc:*)",
+      "Bash(npx vite build)",
+      "Bash(npx shadcn@latest add:*)",
+      "Bash(git -C \"d:\\\\workspace\\\\spark-prototype\" status)",
+      "Bash(git -C \"d:\\\\workspace\\\\spark-prototype\" diff)",
+      "Bash(git -C \"d:\\\\workspace\\\\spark-prototype\" log --oneline -5)",
+      "Bash(git -C \"d:\\\\workspace\\\\spark-prototype\" rm --cached .claude/settings.local.json)",
+      "Bash(git -C \"d:\\\\workspace\\\\spark-prototype\" rm --cached -f .claude/settings.local.json)",
+      "Bash(git -C \"d:\\\\workspace\\\\spark-prototype\" commit -m \"$\\(cat <<''EOF''\nInitial commit with registration button\n\nSet up React + Vite project with Tailwind CSS and shadcn/ui.\nAdded a centered registration button on the main page.\n\nCo-Authored-By: Claude Opus 4.6 <noreply@anthropic.com>\nEOF\n\\)\")",
+      "Bash(git reset:*)",
+      "Bash(git add:*)",
+      "Bash(git commit -m \"$\\(cat <<''EOF''\nAdd registration flow with multi-step dialog popups\n\nRegister button now opens an animated dialog prompting users to choose\nbetween Institutional Partners or Beneficiaries, each leading to a\nsecond dialog with specific partner/beneficiary types in a 2-column\ngrid layout with relevant icons.\n\nCo-Authored-By: Claude Opus 4.6 <noreply@anthropic.com>\nEOF\n\\)\")",
+      "Bash(git push:*)",
+      "Bash(git pull:*)",
+      "Bash(git rebase:*)"
+    ]
+  }
+}
