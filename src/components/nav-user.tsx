@@ -1,3 +1,4 @@
+import { useNavigate } from "react-router-dom"
 import {
   BadgeCheck,
   Bell,
@@ -37,6 +38,7 @@ export function NavUser({
     avatar: string
   }
 }) {
+  const navigate = useNavigate()
   const { isMobile } = useSidebar()
 
   return (
@@ -100,7 +102,7 @@ export function NavUser({
               </DropdownMenuItem>
             </DropdownMenuGroup>
             <DropdownMenuSeparator />
-            <DropdownMenuItem>
+            <DropdownMenuItem onClick={() => navigate("/")}>
               <LogOut />
               Log out
             </DropdownMenuItem>
