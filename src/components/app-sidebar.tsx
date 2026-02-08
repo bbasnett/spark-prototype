@@ -142,12 +142,12 @@ const data = {
   ],
   projects: [
     {
-      name: "Startup Profile",
+      name: "My Startup Profile",
       url: "#",
       icon: FileText,
     },
     {
-      name: "Team Members",
+      name: "Mentors",
       url: "#",
       icon: Users,
     },

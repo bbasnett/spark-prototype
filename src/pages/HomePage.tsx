@@ -45,8 +45,8 @@ export default function HomePage() {
               }}
               className="group flex flex-col items-center gap-3 rounded-xl border-2 border-muted bg-card p-6 text-center transition-all duration-200 hover:scale-[1.03] hover:border-primary hover:shadow-lg focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring"
             >
-              <div className="flex size-14 items-center justify-center rounded-full bg-primary/10 transition-colors duration-200 group-hover:bg-primary/20">
-                <Building2 className="size-7 text-primary" />
+              <div className="flex size-14 items-center justify-center rounded-full bg-blue-100 transition-colors duration-200 group-hover:bg-blue-200">
+                <Building2 className="size-7 text-blue-600" />
               </div>
               <div>
                 <p className="font-semibold">Institutional Partners</p>
@@ -64,8 +64,8 @@ export default function HomePage() {
               }}
               className="group flex flex-col items-center gap-3 rounded-xl border-2 border-muted bg-card p-6 text-center transition-all duration-200 hover:scale-[1.03] hover:border-primary hover:shadow-lg focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring"
             >
-              <div className="flex size-14 items-center justify-center rounded-full bg-primary/10 transition-colors duration-200 group-hover:bg-primary/20">
-                <HeartHandshake className="size-7 text-primary" />
+              <div className="flex size-14 items-center justify-center rounded-full bg-emerald-100 transition-colors duration-200 group-hover:bg-emerald-200">
+                <HeartHandshake className="size-7 text-emerald-600" />
               </div>
               <div>
                 <p className="font-semibold">Beneficiaries</p>
@@ -114,8 +114,8 @@ export default function HomePage() {
                 }}
                 className="group flex flex-col items-center gap-2 rounded-lg border border-border bg-card p-4 text-center transition-all duration-200 hover:border-primary hover:shadow-md focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring"
               >
-                <div className="flex size-10 shrink-0 items-center justify-center rounded-full bg-primary/10 transition-colors duration-200 group-hover:bg-primary/20">
-                  <partner.icon className="size-5 text-primary" />
+                <div className={`flex size-10 shrink-0 items-center justify-center rounded-full ${partner.iconBg} ${partner.iconHoverBg} transition-colors duration-200`}>
+                  <partner.icon className={`size-5 ${partner.iconColor}`} />
                 </div>
                 <p className="text-sm font-medium leading-snug">
                   {partner.name}
@@ -163,8 +163,8 @@ export default function HomePage() {
                 }}
                 className="group flex flex-col items-center gap-2 rounded-lg border border-border bg-card p-4 text-center transition-all duration-200 hover:border-primary hover:shadow-md focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring"
               >
-                <div className="flex size-10 shrink-0 items-center justify-center rounded-full bg-primary/10 transition-colors duration-200 group-hover:bg-primary/20">
-                  <item.icon className="size-5 text-primary" />
+                <div className={`flex size-10 shrink-0 items-center justify-center rounded-full ${item.iconBg} ${item.iconHoverBg} transition-colors duration-200`}>
+                  <item.icon className={`size-5 ${item.iconColor}`} />
                 </div>
                 <p className="text-sm font-medium leading-snug">{item.name}</p>
                 <p className="text-xs text-muted-foreground">{item.desc}</p>
