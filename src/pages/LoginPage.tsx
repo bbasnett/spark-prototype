@@ -1,5 +1,5 @@
 import { useState } from "react"
-import { Link } from "react-router-dom"
+import { Link, useNavigate } from "react-router-dom"
 import { LogIn } from "lucide-react"
 import { Button } from "@/components/ui/button"
 import {
@@ -23,6 +23,7 @@ import { Tabs, TabsList, TabsTrigger } from "@/components/ui/tabs"
 import { partners, beneficiaries } from "@/lib/stakeholders"
 
 export default function LoginPage() {
+  const navigate = useNavigate()
   const [category, setCategory] = useState<"partner" | "beneficiary">(
     "partner"
   )
@@ -44,6 +45,9 @@ export default function LoginPage() {
           <form
             onSubmit={(e) => {
               e.preventDefault()
+              if (category === "beneficiary" && role === "Startups") {
+                navigate("/startup/dashboard")
+              }
             }}
             className="flex flex-col gap-5"
           >

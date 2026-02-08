@@ -17,7 +17,12 @@
       "Bash(git commit -m \"$\\(cat <<''EOF''\nAdd registration flow with multi-step dialog popups\n\nRegister button now opens an animated dialog prompting users to choose\nbetween Institutional Partners or Beneficiaries, each leading to a\nsecond dialog with specific partner/beneficiary types in a 2-column\ngrid layout with relevant icons.\n\nCo-Authored-By: Claude Opus 4.6 <noreply@anthropic.com>\nEOF\n\\)\")",
       "Bash(git push:*)",
       "Bash(git pull:*)",
-      "Bash(git rebase:*)"
+      "Bash(git rebase:*)",
+      "WebFetch(domain:ui.shadcn.com)",
+      "WebFetch(domain:raw.githubusercontent.com)",
+      "WebFetch(domain:github.com)",
+      "Bash(dir:*)",
+      "Bash(npm run build:*)"
     ]
   }
 }
