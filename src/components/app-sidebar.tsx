@@ -11,6 +11,7 @@ import {
   Rocket,
   ClipboardList,
   GraduationCap,
+  Building2,
 } from "lucide-react"
 
 import { NavMain } from "@/components/nav-main"
@@ -106,6 +107,21 @@ const data = {
         {
           title: "My Sessions",
           url: "#",
+        },
+      ],
+    },
+    {
+      title: "Book Facility",
+      url: "#",
+      icon: Building2,
+      items: [
+        {
+          title: "Available Facilities",
+          url: "/startup/facilities",
+        },
+        {
+          title: "My Bookings",
+          url: "/startup/my-bookings",
         },
       ],
     },
